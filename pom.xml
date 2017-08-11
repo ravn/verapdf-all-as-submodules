@@ -13,5 +13,6 @@
         <module>modules/veraPDF-library-integration/parent/veraPDF-validation</module>
         <module>modules/veraPDF-library-integration/parent/veraPDF-model</module>
         <module>modules/veraPDF-library-integration/parent/veraPDF-parser</module>
+        <module>it/verapdf-kb-qa</module>
     </modules>
 </project>
