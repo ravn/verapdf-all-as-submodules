@@ -1,0 +1,7 @@
+.idea
+*.iml
+*~
+/*-*
+/m2/repository
+/git-mirrors/
+
