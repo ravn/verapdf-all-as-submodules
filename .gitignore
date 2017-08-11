@@ -1,7 +1,5 @@
 .idea
 *.iml
 *~
-/*-integration
-/m2/repository
 /git-mirrors/
-
+/modules/

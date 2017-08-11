@@ -6,18 +6,20 @@ while(<DATA>) {
     next if (/^ *$/); # blank line
     ($path, $repo, $checkout, $rest) = split(/[ \t]+/);
     if (defined $rest) {
-	die "$path has extra\n";
+	    die "$path has extra\n";
     }
     # print "path = $path, repo = $repo, checkout = $checkout\n";
     $encoded_repo = $repo;
     $encoded_repo =~ s/([^a-z0-9])/"_".sprintf("%X",ord($1))/eg;
     $repodir = "git-mirrors/$encoded_repo";
 
+    print "echo '***' $path\n";
     if (!$repo_seen_before{$repo}++) {
-	print "if [ -d $repodir ]; then echo already mirrored - fetch; else git clone --mirror $repo $repodir; fi\n"; # fetch?
+	print "if [ -d $repodir ]; then git -C $repodir remote update; else git clone --mirror $repo $repodir; fi\n";
     }
-    print "if [ -d $path ]; then echo already cloned; else git clone $repodir $path; fi\n"; # update?
+    print "if [ -d $path ]; then echo $path already cloned; else git clone $repodir $path; fi\n";
     print "git -C $path checkout $checkout\n";
+    print "git -C $path pull\n";
 }
 
 __DATA__
