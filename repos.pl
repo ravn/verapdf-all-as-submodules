@@ -26,9 +26,9 @@ while(<DATA>) {
 __DATA__
 # format:  directory_to_clone_to  url_to_clone_from  git_commit_id_to_checkout
 # 
-modules/veraPDF-library-integration https://github.com/veraPDF/veraPDF-library integration
-modules/veraPDF-library-integration/parent/veraPDF-validation https://github.com/veraPDF/veraPDF-validation integration
-modules/veraPDF-library-integration/parent/veraPDF-model https://github.com/veraPDF/veraPDF-model integration
+#modules/veraPDF-library-integration https://github.com/veraPDF/veraPDF-library integration
+#modules/veraPDF-library-integration/parent/veraPDF-validation https://github.com/veraPDF/veraPDF-validation integration
+modules/veraPDF-library-integration/parent/veraPDF-model https://github.com/vera#PDF/veraPDF-model integration
 modules/veraPDF-library-integration/parent/veraPDF-parser https://github.com/veraPDF/veraPDF-parser integration
 it/veraPDF-corpus https://github.com/veraPDF/veraPDF-corpus master
 

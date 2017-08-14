@@ -9,14 +9,17 @@
     <packaging>pom</packaging>
 
     <properties>
-        <!-- coordinate with veraPDF-validation project cloned in! -->
+      <!-- later: coordinate with veraPDF-validation project cloned in! -->
+      <!-- now:  use latest veraPDF-validation project published, sigh. -->
         <verapdf.validation.version>1.9.0-SNAPSHOT</verapdf.validation.version>
     </properties>
     <modules>
+      <!-- disabled due to pom.xml inconsistency in artifacts.
         <module>modules/veraPDF-library-integration</module>
         <module>modules/veraPDF-library-integration/parent/veraPDF-validation</module>
         <module>modules/veraPDF-library-integration/parent/veraPDF-model</module>
         <module>modules/veraPDF-library-integration/parent/veraPDF-parser</module>
+	-->
         <module>it/verapdf-kb-qa</module>
     </modules>
 </project>
