@@ -8,6 +8,10 @@
     <version>master-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <properties>
+        <!-- coordinate with veraPDF-validation project cloned in! -->
+        <verapdf.validation.version>1.9.0-SNAPSHOT</verapdf.validation.version>
+    </properties>
     <modules>
         <module>modules/veraPDF-library-integration</module>
         <module>modules/veraPDF-library-integration/parent/veraPDF-validation</module>

@@ -12,19 +12,33 @@
     <artifactId>verapdf-qa</artifactId>
     <packaging>jar</packaging>
 
-    <name>verapdf-qa</name>
+    <name>verapdf-kb-qa</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.verapdf</groupId>
+            <artifactId>validation-model</artifactId>
+            <version>${verapdf.validation.version}</version>
+        </dependency>
+
+        
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+        <!-- 3-arg iterate requires Java 9, until then use streamex -->
+        <dependency>
+            <groupId>one.util</groupId>
+            <artifactId>streamex</artifactId>
+            <version>0.6.5</version>
         </dependency>
 
     </dependencies>

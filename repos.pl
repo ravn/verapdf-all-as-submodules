@@ -1,5 +1,6 @@
 #!/usr/bin/env perl 
 
+# pipe to a shell.
 while(<DATA>) {
     chomp;
     next if (/^ *#/); # comment line
@@ -29,4 +30,7 @@ modules/veraPDF-library-integration https://github.com/veraPDF/veraPDF-library i
 modules/veraPDF-library-integration/parent/veraPDF-validation https://github.com/veraPDF/veraPDF-validation integration
 modules/veraPDF-library-integration/parent/veraPDF-model https://github.com/veraPDF/veraPDF-model integration
 modules/veraPDF-library-integration/parent/veraPDF-parser https://github.com/veraPDF/veraPDF-parser integration
+it/veraPDF-corpus https://github.com/veraPDF/veraPDF-corpus master
+
+
 
